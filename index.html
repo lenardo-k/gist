@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheatsheet on CSS Selectors</title>
+<link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>CSS Selectors Reference Table</h1>
+<table>
+    <thead>
+<tr>
+    <th>Selector Name</th>
+    <th>Tag</th>
+    <th>Selectivity</th>
+    <th>Description</th>
+    <th>Tag within HTML</th>
+</tr>
+    </thead>
+    <tbody>
+<tr>
+    <th>Elements</th>
+    <td class="tag">&lt;h1&gt;Heading 1&lt;/h1&gt; &lt;a&gt; &lt;p&gt;</td>
+    <td>less specific</td>
+    <td>This selector refers to the HTML-elements, the building blocks of the website itself.</td>
+    <td class="tag">&lt;h1&gt; &lt;a&gt; &lt;p&gt;</td>
+</tr>
+<tr>
+    <th>Pseudoclasses</th>
+    <td class="tag">a:hover a:active</td>
+    <td>more specific than elements</td>
+    <td>The pseudoclasses are you used to style elements in a special stage, like when you hover the mouse over it or when it is clicked. Mostly used with the anchor tag.</td>
+    <td class="tag">&lt;a&gt; (no correspondence in HTML code) </td>
+</tr>
+<tr>
+    <th>Classes</th>
+    <td class="tag">.class1 .article</td>
+    <td>more specific</td>
+    <td>You can group elements in classes that should get the same styling.</td>
+    <td class="tag">&lt;h1 class="article"&gt;Heading 1&lt;/h1&gt;;</td>
+</tr>
+<tr>
+    <th>IDs</th>
+    <td class="tag">#id1 #teaser</td>
+    <td>most specific</td>
+    <td>For specific elements, you give IDs. One ID can only go to one specific element.</td>
+    <td class="tag">&lt;h1 id="teaser"&gt;</td>
+</tr>
+
+<tr><th id="combi">Combinations</th></tr>
+<tr>
+    <th>multiples selectors nested</th>
+    <td class="tag">.class1 h2</td>
+    <td>specific to those elements within the given class or ID</td>
+    <td>Selectors can be nested, whereas the latter selector is to be found within the first selector. Nested selectors are separated by space only.</td>
+    <td class="tag"></td>
+</tr>
+<tr>
+    <th>multiple selectors unrelated</th>
+    <td class="tag">h1, h2, a, p</td>
+    <td>apply to all selectors listed without nesting</td>
+    <td>Unrelated or unnested selectors can be listed and separated by comma.</td>
+    <td class="tag"></td>
+</tr>
+</tbody>
+
+</table>
+
+
+
+</body>
+
+
+
+
+</html>

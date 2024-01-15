@@ -1,0 +1,36 @@
+
+h1 {
+    font-size: x-large;
+    color-scheme: darkblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.tag {
+        font-family: monospace;
+      }
+
+body {
+    background-color: azure;
+}
+
+table{
+    border: 2px solid darkblue;
+}
+
+tr, th, td {
+    border-bottom: 1px solid darkred;
+}
+
+thead {
+    margin: 5px;
+    background-color: aquamarine;
+}
+
+tbody th {
+    font-weight: normal;
+}
+
+#combi {
+    font-weight: bold;
+}
